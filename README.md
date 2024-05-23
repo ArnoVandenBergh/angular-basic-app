@@ -1,5 +1,8 @@
 # MyCoolApp
 
+This is a basic angular app that I used to learn the basics of angular.
+
+# Angular Generated Content
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 
 ## Development server
