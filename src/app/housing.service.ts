@@ -5,88 +5,22 @@ import { Housinglocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-
   constructor() { }
   readonly baseUrl = 'https://picsum.photos/seed/picsum';
+  url = 'http://localhost:3000/locations';
 
-  housingLocationList: Housinglocation[] = [
-    {
-      id: 0,
-      name: 'The Enclave',
-      city: 'Phoenix',
-      state: 'AZ',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 3,
-      wifi: true,
-      laundry: true
-    },
-    {
-      id: 1,
-      name: 'The Enclave',
-      city: 'Phoenix',
-      state: 'AZ',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 3,
-      wifi: true,
-      laundry: true
-    },
-    {
-      id: 2,
-      name: 'Metropolitan Tower',
-      city: 'Seattle',
-      state: 'WA',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 0,
-      wifi: true,
-      laundry: false
-    },
-    {
-      id: 3,
-      name: 'The Mayfair',
-      city: 'New York',
-      state: 'NY',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 1,
-      wifi: false,
-      laundry: true
-    },
-    {
-      id: 4,
-      name: 'The Reserve',
-      city: 'Los Angeles',
-      state: 'CA',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 2,
-      wifi: true,
-      laundry: true
-    },
-    {
-      id: 5,
-      name: 'The Ritz',
-      city: 'Chicago',
-      state: 'IL',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 0,
-      wifi: false,
-      laundry: false
-    },
-    {
-      id: 6,
-      name: 'The Grand',
-      city: 'Miami',
-      state: 'FL',
-      photo: `${this.baseUrl}/200/300`,
-      availableUnits: 3,
-      wifi: true,
-      laundry: true
-    }
-  ];
 
-  getHousingAllLocations(): Housinglocation[] {
-    return this.housingLocationList;
+  async getHousingAllLocations(): Promise<Housinglocation[]> {
+    const data = await fetch(this.url);
+    return (await data.json()) ?? [];
   }
 
-  getHousingLocationById(id: number): Housinglocation {
-    return this.housingLocationList.find(h => h.id === id)!;
+  async getHousingLocationById(id: number): Promise<Housinglocation> {
+    const response = await fetch(`${this.url}/${id}`);
+    return (await response.json()) ?? {};
+  }
+
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(`Homes application submitted for ${firstName} ${lastName} with email ${email}`);
   }
 }

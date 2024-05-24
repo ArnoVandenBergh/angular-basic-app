@@ -1,0 +1,94 @@
+{
+    "locations": [
+        {
+            "id": 0,
+            "name": "Acme Fresh Market",
+            "city": "Akron",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 5,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 1,
+            "name": "Safeway House",
+            "city": "San Francisco",
+            "state": "CA",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 3,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 2,
+            "name": "Kroger",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 2,
+            "wifi": false,
+            "laundry": true
+        },
+        {
+            "id": 3,
+            "name": "Walmart",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 1,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 4,
+            "name": "Target",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 4,
+            "wifi": true,
+            "laundry": true
+        },
+        {
+            "id": 5,
+            "name": "Costco",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 3,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 6,
+            "name": "Whole Foods",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 2,
+            "wifi": false,
+            "laundry": true
+        },
+        {
+            "id": 7,
+            "name": "Trader Joe's",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 1,
+            "wifi": true,
+            "laundry": false
+        },
+        {
+            "id": 8,
+            "name": "Meijer",
+            "city": "Columbus",
+            "state": "OH",
+            "photo": "${this.baseUrl}/200/200",
+            "availableUnits": 4,
+            "wifi": true,
+            "laundry": true
+        }
+    ]
+}
