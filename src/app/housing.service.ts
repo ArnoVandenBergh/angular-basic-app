@@ -5,8 +5,8 @@ import { Housinglocation } from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
+  applicationCounter = 0;
   constructor() { }
-  readonly baseUrl = 'https://picsum.photos/seed/picsum';
   url = 'http://localhost:3000/locations';
 
 
@@ -16,11 +16,13 @@ export class HousingService {
   }
 
   async getHousingLocationById(id: number): Promise<Housinglocation> {
-    const response = await fetch(`${this.url}/${id}`);
-    return (await response.json()) ?? {};
+    const response = await fetch(`${this.url}?id=${id}`);
+    const result = (await response.json()) ?? {};
+    return result[0];
   }
 
   submitApplication(firstName: string, lastName: string, email: string) {
     console.log(`Homes application submitted for ${firstName} ${lastName} with email ${email}`);
+    this.applicationCounter++;
   }
 }

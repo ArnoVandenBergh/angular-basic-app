@@ -5,7 +5,7 @@
             "name": "Acme Fresh Market",
             "city": "Akron",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 5,
             "wifi": true,
             "laundry": true
@@ -15,7 +15,7 @@
             "name": "Safeway House",
             "city": "San Francisco",
             "state": "CA",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 3,
             "wifi": true,
             "laundry": false
@@ -25,7 +25,7 @@
             "name": "Kroger",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 2,
             "wifi": false,
             "laundry": true
@@ -35,7 +35,7 @@
             "name": "Walmart",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 1,
             "wifi": true,
             "laundry": false
@@ -45,7 +45,7 @@
             "name": "Target",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 4,
             "wifi": true,
             "laundry": true
@@ -55,7 +55,7 @@
             "name": "Costco",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 3,
             "wifi": true,
             "laundry": false
@@ -65,7 +65,7 @@
             "name": "Whole Foods",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 2,
             "wifi": false,
             "laundry": true
@@ -75,7 +75,7 @@
             "name": "Trader Joe's",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 1,
             "wifi": true,
             "laundry": false
@@ -85,7 +85,7 @@
             "name": "Meijer",
             "city": "Columbus",
             "state": "OH",
-            "photo": "${this.baseUrl}/200/200",
+            "photo": "https://picsum.photos/seed/picsum/200/200",
             "availableUnits": 4,
             "wifi": true,
             "laundry": true

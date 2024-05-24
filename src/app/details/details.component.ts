@@ -30,7 +30,7 @@ import { first } from 'rxjs';
       </ul>
     </section>
     <section class="listing-apply">
-      <h2 class="section-heading">Apply</h2>
+      <h2 class="section-heading">Apply ({{housingService.applicationCounter}})</h2>
       <form [formGroup]="applyForm" (submit)="submitApplication()">
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" formControlName="firstName" />
@@ -51,6 +51,7 @@ export class DetailsComponent {
   housingLocation: Housinglocation | undefined;
 
   housingLocationId = -1;
+  numberOfApplications = 0;
 
   applyForm = new FormGroup({
     firstName: new FormControl(''),
@@ -62,6 +63,7 @@ export class DetailsComponent {
     this.housingLocationId = Number(this.route.snapshot.paramMap.get('id'));
     this.housingService.getHousingLocationById(this.housingLocationId).then((location: Housinglocation) => {
       this.housingLocation = location;
+      console.log(this.housingLocation?.photo,'hello');
     }
     )
   }
@@ -72,5 +74,6 @@ export class DetailsComponent {
       this.applyForm.value.lastName ?? '',
       this.applyForm.value.email ?? '',
     );
+    this.numberOfApplications++;
   }
 }
